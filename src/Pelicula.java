@@ -2,9 +2,17 @@ public class Pelicula {
     private String nombre;
     private String autor;
     private String[] elenco;
-    private String genero;
+    private Genero genero;
     private int restriccionDeEdad;
-
+    //Constructor
+    public Pelicula(String nombre, String autor, String[] elenco, Genero genero, int restriccionDeEdad) {
+        this.nombre = nombre;
+        this.autor = autor;
+        this.elenco = elenco;
+        this.genero = genero;
+        this.restriccionDeEdad = restriccionDeEdad;
+    }
+    //Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -29,11 +37,11 @@ public class Pelicula {
         this.elenco = elenco;
     }
 
-    public String getGenero() {
+    public Genero getGenero() {
         return genero;
     }
 
-    public void setGenero(String genero) {
+    public void setGenero(Genero genero) {
         this.genero = genero;
     }
 

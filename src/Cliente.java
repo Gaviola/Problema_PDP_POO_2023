@@ -1,24 +1,38 @@
 public class Cliente {
     private String nombre;
-    private String pellido;
+    private String apellido;
     private int id;
-
+    //Constructores
+    public Cliente() {
+       this.id = -1;
+       this.nombre = "";
+       this.apellido = "";
+    }
+    public Cliente(int id, String nombre, String apellido) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+    // Responsabilidades
     public Funcion reservar() {
+        //Logica de la funcion
     }
 
     public Producto reservarProducto() {
+        //Logica de la funcion
     }
 
     public Funcion[] buscarFuncionPorHorario() {
-
+        //Logica de la funcion
     }
     public Funcion[] buscarFuncionPorPelicula() {
-
+        //Logica de la funcion
     }
     public Funcion[] buscarFuncionPorGenero() {
-
+        //Logica de la funcion
     }
 
+    //Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -27,12 +41,12 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public String getPellido() {
-        return pellido;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setPellido(String pellido) {
-        this.pellido = pellido;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public int getId() {
