@@ -1,3 +1,9 @@
 public enum Genero {
-    ACCION,DRAMA,ROMANCE,CIENCIA_FICCION,COMEDIA,INFANTIL,ANIMADA
+    Accion,
+    Drama,
+    Romance,
+    CienciaFiccion,
+    Comedia,
+    Infantil,
+    Animada
 }

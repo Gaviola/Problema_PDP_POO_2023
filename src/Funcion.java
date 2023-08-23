@@ -7,6 +7,7 @@ public class Funcion {
     private Sala sala;
     private Pelicula pelicula;
 
+    //region Constructores
     public Funcion(LocalDateTime horario, String idioma, boolean esDoblada, Sala sala, Pelicula pelicula) {
         this.horario = horario;
         this.idioma = idioma;
@@ -14,20 +15,18 @@ public class Funcion {
         this.sala = sala;
         this.pelicula = pelicula;
     }
-    //Constructores
-    public Funcion() {
-        this(LocalDateTime.now(),"null",false,new Sala(),new Pelicula());
-    }
 
-    public Funcion comprar(){
-        //Logica de funcion
+    public Funcion() {
+        this(LocalDateTime.now(), "", false, new Sala(), new Pelicula());
     }
-    //Getters y Setters
-    public int getHorario() {
+    //endregion
+
+    //region Getters y Setters
+    public LocalDateTime getHorario() {
         return horario;
     }
 
-    public void setHorario(int horario) {
+    public void setHorario(LocalDateTime horario) {
         this.horario = horario;
     }
 
@@ -61,5 +60,17 @@ public class Funcion {
 
     public void setPelicula(Pelicula pelicula) {
         this.pelicula = pelicula;
+    }
+    //endregion
+
+    @Override
+    public String toString() {
+        return "Horario: " + horario + ", \nPelícula: " + pelicula + ", \nIdioma: "
+                + idioma + ", \nSala: " + sala + ", \nEs doblada: " + esDoblada;
+    }
+
+    public Funcion comprar(){
+        //Logica de funcion
+        return this;
     }
 }

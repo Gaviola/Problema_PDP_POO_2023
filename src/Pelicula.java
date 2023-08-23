@@ -4,7 +4,12 @@ public class Pelicula {
     private String[] elenco;
     private Genero genero;
     private int restriccionDeEdad;
-    //Constructor
+
+    //region Constructor
+    public Pelicula(){
+        nombre = "";
+    }
+
     public Pelicula(String nombre, String autor, String[] elenco, Genero genero, int restriccionDeEdad) {
         this.nombre = nombre;
         this.autor = autor;
@@ -12,7 +17,9 @@ public class Pelicula {
         this.genero = genero;
         this.restriccionDeEdad = restriccionDeEdad;
     }
-    //Getters y Setters
+    //endregion
+
+    //region Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -51,5 +58,13 @@ public class Pelicula {
 
     public void setRestriccionDeEdad(int restriccionDeEdad) {
         this.restriccionDeEdad = restriccionDeEdad;
+    }
+
+    //endregion
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + ", \nGénero: " + genero + ", \nRestricción de edad: "
+                + restriccionDeEdad + ", \nAutor: " + autor;
     }
 }

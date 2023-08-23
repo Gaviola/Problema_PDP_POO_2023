@@ -2,37 +2,22 @@ public class Cliente {
     private String nombre;
     private String apellido;
     private int id;
-    //Constructores
+
+    //region Constructores
     public Cliente() {
        this.id = -1;
        this.nombre = "";
        this.apellido = "";
     }
+
     public Cliente(int id, String nombre, String apellido) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
     }
-    // Responsabilidades
-    public Funcion reservar() {
-        //Logica de la funcion
-    }
+    //endregion
 
-    public Producto reservarProducto() {
-        //Logica de la funcion
-    }
-
-    public Funcion[] buscarFuncionPorHorario() {
-        //Logica de la funcion
-    }
-    public Funcion[] buscarFuncionPorPelicula() {
-        //Logica de la funcion
-    }
-    public Funcion[] buscarFuncionPorGenero() {
-        //Logica de la funcion
-    }
-
-    //Getters y Setters
+    //region Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -55,5 +40,34 @@ public class Cliente {
 
     public void setId(int id) {
         this.id = id;
+    }
+    //endregion
+
+    @Override
+    public String toString() {
+        return "ID: " + id + ", \nNombre: " + nombre + ", \nApellido: " + apellido;
+    }
+
+    public Funcion reservar() {
+        //Logica de la funcion
+        return new Funcion();
+    }
+
+    public Producto reservarProducto() {
+        //Logica de la funcion
+        return new Producto();
+    }
+
+    public Funcion[] buscarFuncionPorHorario() {
+        //Logica de la funcion
+        return new Funcion[]{};
+    }
+    public Funcion[] buscarFuncionPorPelicula() {
+        //Logica de la funcion
+        return new Funcion[]{};
+    }
+    public Funcion[] buscarFuncionPorGenero() {
+        //Logica de la funcion
+        return new Funcion[]{};
     }
 }

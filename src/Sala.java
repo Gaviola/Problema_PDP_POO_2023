@@ -4,6 +4,7 @@ public class Sala {
     private boolean sonidoEnvolvente;
     private boolean butacasEspaciosas;
 
+    //region Getters y Setters
     public int[][] getAsientos() {
         return asientos;
     }
@@ -12,7 +13,7 @@ public class Sala {
         this.asientos = asientos;
     }
 
-    public boolean isEs3D() {
+    public boolean getEs3D() {
         return es3D;
     }
 
@@ -20,7 +21,7 @@ public class Sala {
         this.es3D = es3D;
     }
 
-    public boolean isSonidoEnvolvente() {
+    public boolean tieneSonidoEnvolvente() {
         return sonidoEnvolvente;
     }
 
@@ -28,11 +29,12 @@ public class Sala {
         this.sonidoEnvolvente = sonidoEnvolvente;
     }
 
-    public boolean isButacasEspaciosas() {
+    public boolean tieneButacasEspaciosas() {
         return butacasEspaciosas;
     }
 
     public void setButacasEspaciosas(boolean butacasEspaciosas) {
         this.butacasEspaciosas = butacasEspaciosas;
     }
+    //endregion
 }

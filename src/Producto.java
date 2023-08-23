@@ -2,10 +2,7 @@ public class Producto {
     private String nombre;
     private double precio;
 
-    public Producto comprar(){
-
-    }
-
+    //region Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -20,5 +17,15 @@ public class Producto {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+    //endregion
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + ", \nPrecio: " + precio;
+    }
+
+    public Producto comprar(){
+        return this;
     }
 }
