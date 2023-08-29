@@ -1,3 +1,7 @@
+package CineUncuyo;
+
+import CineUncuyo.Peliculas.Pelicula;
+
 import java.time.LocalDateTime;
 
 public class Funcion {
@@ -66,11 +70,6 @@ public class Funcion {
     @Override
     public String toString() {
         return "Horario: " + horario + ", \nPelícula: " + pelicula + ", \nIdioma: "
-                + idioma + ", \nSala: " + sala + ", \nEs doblada: " + esDoblada;
-    }
-
-    public Funcion comprar(){
-        //Logica de funcion
-        return this;
+                + idioma + ", \nCineUncuyo.Sala: " + sala + ", \nEs doblada: " + esDoblada;
     }
 }

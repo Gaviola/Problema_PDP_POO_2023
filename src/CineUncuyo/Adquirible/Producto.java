@@ -1,4 +1,6 @@
-public class Producto {
+package CineUncuyo.Adquirible;
+
+public class Producto implements Adquirible {
     private String nombre;
     private double precio;
 
@@ -25,7 +27,8 @@ public class Producto {
         return "Nombre: " + nombre + ", \nPrecio: " + precio;
     }
 
-    public Producto comprar(){
-        return this;
+    @Override
+    public void comprar(){
+
     }
 }

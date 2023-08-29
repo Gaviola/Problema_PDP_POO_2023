@@ -1,3 +1,5 @@
+package CineUncuyo;
+
 public class Sala {
     private int[][] asientos;
     private boolean es3D;

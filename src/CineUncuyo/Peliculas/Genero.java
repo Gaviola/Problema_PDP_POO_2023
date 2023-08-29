@@ -1,3 +1,5 @@
+package CineUncuyo.Peliculas;
+
 public enum Genero {
     Accion,
     Drama,
