@@ -1,4 +1,6 @@
 package CineUncuyo;
+import CineUncuyo.Salas.Sala;
+
 import java.util.ArrayList;
 
 public class Cine {
