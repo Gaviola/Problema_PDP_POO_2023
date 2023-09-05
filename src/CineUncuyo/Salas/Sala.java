@@ -19,6 +19,10 @@ public class Sala {
         this.asientos = asientos;
     }
 
+    public boolean comparar(Sala sala) {
+        return this.asientos.length == sala.asientos.length;
+    }
+
     public void Cerrar(){
 
     }

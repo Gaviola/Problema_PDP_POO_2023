@@ -36,9 +36,13 @@ public class Cine {
     }
     //endregion
 
+    public boolean comparar(Cine cine) {
+        return this.direccion.equals(cine.direccion);
+    }
+
     public <T extends Sala> void CerrarSala(T tipoDeSala){
         for (Sala sala : salas){
-            if (sala instanceof tipoDeSala){
+            if (sala != null){
                 sala.Cerrar();
             }
         }

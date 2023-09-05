@@ -9,5 +9,9 @@ public class SalaPremium extends Sala{
         super();
     }
 
+    @Override
+    public boolean comparar(Sala sala) {
+        return super.comparar(sala);
+    }
 }
 
