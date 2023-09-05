@@ -1,6 +1,8 @@
 package CineUncuyo;
 import CineUncuyo.Salas.Sala;
+import CineUncuyo.Salas.Sala2D;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class Cine {
@@ -33,4 +35,12 @@ public class Cine {
         this.salas = salas;
     }
     //endregion
+
+    public <T extends Sala> void CerrarSala(T tipoDeSala){
+        for (Sala sala : salas){
+            if (sala instanceof tipoDeSala){
+                sala.Cerrar();
+            }
+        }
+    }
 }

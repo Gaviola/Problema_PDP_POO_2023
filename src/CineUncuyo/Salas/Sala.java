@@ -19,4 +19,8 @@ public class Sala {
         this.asientos = asientos;
     }
 
+    public void Cerrar(){
+
+    }
+
 }
