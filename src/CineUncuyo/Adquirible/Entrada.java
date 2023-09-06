@@ -7,6 +7,12 @@ public class Entrada implements Adquirible {
     private Funcion funcion;
     private String asiento;
 
+    public Entrada(LocalDateTime fechaDeCompra, Funcion funcion, String asiento) {
+        this.fechaDeCompra = fechaDeCompra;
+        this.funcion = funcion;
+        this.asiento = asiento;
+    }
+
     //region Getters y Setters
     public LocalDateTime getFechaDeCompra() {
         return fechaDeCompra;

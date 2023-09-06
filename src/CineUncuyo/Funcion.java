@@ -68,8 +68,8 @@ public class Funcion {
     }
     //endregion
 
-    public boolean comparar(Funcion fun) {
-        return this.pelicula == fun.pelicula;
+    public boolean comparar(Funcion funcion) {
+        return this.pelicula == funcion.pelicula && this.horario == funcion.horario;
     }
 
     @Override

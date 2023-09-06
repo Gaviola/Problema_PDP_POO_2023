@@ -40,11 +40,4 @@ public class Cine {
         return this.direccion.equals(cine.direccion);
     }
 
-    public <T extends Sala> void CerrarSala(T tipoDeSala){
-        for (Sala sala : salas){
-            if (sala != null){
-                sala.Cerrar();
-            }
-        }
-    }
 }

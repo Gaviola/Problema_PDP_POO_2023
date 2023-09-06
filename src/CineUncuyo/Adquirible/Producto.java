@@ -4,6 +4,11 @@ public class Producto implements Adquirible {
     private String nombre;
     private double precio;
 
+    public Producto(String nombre, double precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+
     //region Getters y Setters
     public String getNombre() {
         return nombre;

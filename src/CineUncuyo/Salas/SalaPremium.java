@@ -9,6 +9,10 @@ public class SalaPremium extends Sala{
         super();
     }
 
+    public SalaPremium(int id, int[][] asientos){
+        super(id, asientos);
+    }
+
     @Override
     public boolean comparar(Sala sala) {
         return super.comparar(sala);
